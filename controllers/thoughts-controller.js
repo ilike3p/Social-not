@@ -123,7 +123,7 @@ const thoughtsController = {
         if (!dbThoughtsData) {
           res
             .status(404)
-            .json({ message: "There is no thought found with this ID." });
+            .json({ message: "There is no thought found with this id." });
           return;
         }
         res.json(dbThoughtsData);
