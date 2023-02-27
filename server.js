@@ -8,10 +8,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.use(require("./routes/../../Social-not"));
+app.use(require("../Social-not/./routes/./api/indexx"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/Social-not",
+  process.env.MONGODB_URI || "mongodb://localhost:27017/Social-not",
   {
     useFindAndModify: false,
     useNewUrlParser: true,
